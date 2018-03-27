@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require 'pry'
 
 class Artist
@@ -47,3 +48,42 @@ class Artist
     songs.collect(&:genre).uniq
   end
 end
+=======
+class Artist
+  attr_accessor :name
+
+  def initialize(name)
+    @name = name
+  end
+end
+
+
+
+# Should have a name
+#
+# Must record @@all instances of the class - accessible via self.all method
+#
+# save method should put instances into @@all
+#
+# self.destroy_all should empty @@all
+#
+# Custom constructor .create that instantiates an instance but also invokes save method
+#
+# RELLIES
+# songs belong to an Artist and an artist has many songs
+#   - Adding a song to an artist is done by calling add_song method on an instance of the Artist class
+#   - Songs can be initialized with an optional artist argument
+#
+# Genres have many songs and are initialized with an empty list of songs
+#   - Songs have one genre
+#   - Songs can be initialized with an optional genre argument
+#
+# Artists have many genres through their songs. Use genres method for this association
+# Genres have many artists through their songs. Use artists method for this association
+#
+# If call Song.new("Song Title", artist_object, genre_object), both Song.artist= and Song.genre= should be invoked
+# If call Song.new("This song has no artist or grenre"), neither Song.artist= nor Song.genre should be invoked.
+#
+# Songs should have a find_by_name method
+# Songs should have a find_or_create_by_name method
+>>>>>>> 04c211a3e208c4ea90b503a336eca4a22b52d4b0

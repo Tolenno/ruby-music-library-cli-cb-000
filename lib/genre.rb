@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require 'pry'
 
 class Genre
@@ -34,5 +35,12 @@ class Genre
 
   def artists
     songs.collect(&:artist).uniq
+=======
+class Genre
+  attr_accessor :genre
+
+  def initialize(genre)
+    @genre = genre
+>>>>>>> 04c211a3e208c4ea90b503a336eca4a22b52d4b0
   end
 end

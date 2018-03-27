@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require 'pry'
 
 class Song
@@ -69,3 +70,12 @@ class Song
     self.new_from_filename(filename).tap(&:save)
   end
 end
+=======
+class Song
+  attr_accessor :name
+
+  def initialize(name)
+    @name = name
+  end
+end
+>>>>>>> 04c211a3e208c4ea90b503a336eca4a22b52d4b0
